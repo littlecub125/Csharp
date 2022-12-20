@@ -106,6 +106,7 @@
             this.button6.TabIndex = 3;
             this.button6.Text = ".";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.b_ClickNumber);
             // 
             // button7
             // 
@@ -237,7 +238,7 @@
             this.button23.TabIndex = 22;
             this.button23.Text = "C";
             this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button23.Click += new System.EventHandler(this.b_ResetClick);
             // 
             // label1
             // 

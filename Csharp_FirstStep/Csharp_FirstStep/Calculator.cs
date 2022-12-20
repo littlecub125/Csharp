@@ -21,11 +21,6 @@ namespace Csharp_FirstStep
             InitializeComponent();
         }
 
-        private void button23_Click(object sender, EventArgs e)
-        {
-            this.label1.ResetText();
-        }
-
         private void b_ClickNumber(object sender, EventArgs e)
         {
             if (this.label1.Text == "0" || operandPerformed)
@@ -62,6 +57,11 @@ namespace Csharp_FirstStep
             }
             label1.Text = answer.ToString();
             operandPerformed = false;
+        }
+
+        private void b_ResetClick(object sender, EventArgs e)
+        {
+            this.label1.ResetText();
         }
     }
 }
