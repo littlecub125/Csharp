@@ -24,11 +24,21 @@ namespace Csharp_Grammar
             #endregion
 
             #region type change of variable
-
+            /*
             function.TypeChangeVariable();
 
-
+            function.StringToInt();
+            */
             #endregion
+
+            #region class using
+            /*
+            function.CarClassRun();
+
+            function.BreadClassRun();
+            */
+            #endregion
+
 
         }
     }

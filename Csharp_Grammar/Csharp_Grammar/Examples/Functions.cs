@@ -6,6 +6,43 @@ using System.Threading.Tasks;
 
 namespace Csharp_Grammar.Examples
 {
+    class car001
+    {
+        #region 형태
+        private string size;
+        private string color;
+
+        public void setSize(string size)
+        {
+            this.size=size;
+        }
+
+        public string getSize()
+        {
+            return size;
+        }
+    
+        public void setColor(string color)
+        {
+            this.color = color;
+        }
+        public string getColor()
+        {
+            return color;
+        }
+
+        #endregion
+
+    }
+
+    class Bread
+    {
+        public string shape { get; set; }
+        public string source { get; set; }   
+
+    }
+
+
     public class Functions
     {
         #region >> basic idea of variables
@@ -57,7 +94,8 @@ namespace Csharp_Grammar.Examples
         }
         #endregion
 
-        #region type change of variable
+        #region >> type change of variable
+    
         public void TypeChangeVariable()
         {
             int korean = 100;
@@ -70,6 +108,42 @@ namespace Csharp_Grammar.Examples
             Console.WriteLine("average point {0}",(double)total / 4);
         }
 
+        public void StringToInt()
+        {
+            string strNum = "10";
+
+            int convertNum= Convert.ToInt32(strNum);
+            int parseNum= Int32.Parse(strNum); ;
+
+            Console.WriteLine("{0} + {1} = {2}", convertNum, parseNum, convertNum + parseNum);
+
+        }
+     
         #endregion
+
+        #region >> class using 
+        
+        public void CarClassRun()
+        {
+            car001 car = new car001();
+            car.setSize("suv");
+            car.setColor("black");
+            Console.WriteLine("your car is " + car.getSize()+ " " + car.getColor());
+        }
+
+        public void BreadClassRun()
+        {
+            Bread cake = new Bread();
+
+            cake.shape = "circle";
+            cake.source = "cream";
+
+            Console.WriteLine("Your bread shape is "+cake.shape+" and made of "+cake.source);
+        }
+      
+        #endregion
+
+
+
     }
 }
